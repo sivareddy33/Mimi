@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Mimi</string>
+    <string name="created_by">From L.O.S</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_main">MainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="join">Join</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="password">Password</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="go">Go!</string>
+    <string name="name">Name</string>
+    <string name="send_otp">send otp</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="send">send</string>
+    <string name="including_country_code">Eg. +91 ..... </string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="type_your_message">Type a message</string>
+    <string name="NoRecent">No recent</string>
+    <string name="username">Username</string>
+    <string name="share_with_friends">Share with friends</string>
+    <string name="open_contacts">Open contacts</string>
+    <string name="refresh">refresh</string>
+    <string name="delete_media">Delete media</string>
+    <string name="syncing_contacts">Syncing contacts</string>
+    <string name="title_activity_create_group">CreateGroup</string>
+    <string name="add_group_name">Add group name</string>
+    <string name="share">Share</string>
+    <string name="if_this_is_a_text_message_you_will_be_receiving_this_shortly_if_it_contains_media_please_ask_the_user_to_send_it_again">If this is a text message you will be receiving this shortly, if it contains media please ask the user to send it again.</string>
+    <string name="read">Read</string>
+    <string name="delivered">Delivered</string>
+    <string name="exit_group">Exit group</string>
+    <string name="edit_group_name">Edit group name</string>
+    <string name="add_users">Add users</string>
+    <string name="image_reply_thumbnail">Image reply thumbnail</string>
+</resources>

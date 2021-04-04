@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.leagueofshadows.enc.SwipeRevealLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    app:dragFromEdge="left"
+    android:layout_marginTop="5dp">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|end"
+            android:orientation="horizontal"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+
+            <ImageButton
+                android:id="@+id/info_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="Info"
+                app:srcCompat="@drawable/ic_info_outline" />
+
+            <ImageButton
+                android:id="@+id/edit_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="Edit"
+                app:srcCompat="@drawable/ic_edit" />
+            <ImageButton
+                android:id="@+id/info_button1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="Info"
+                app:srcCompat="@drawable/ic_info_outline" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#121212">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:rotation="270"
+            android:src="@drawable/ic_right_angled_triangle"
+            android:tint="#212e36" />
+
+        <LinearLayout
+            android:id="@+id/incoming_layout_bubble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/to_msg_background"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:tint="#EC0D0D"
+                    app:srcCompat="@android:drawable/stat_sys_warning" />
+
+                <TextView
+                    android:id="@+id/textview_message"
+                    style="@style/chat_text_message_style"
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:paddingLeft="6dp"
+                    android:text="If this is a text message you will be receiving this shortly, if it contains media please ask the user to send it again."
+                    android:textColor="#CC676767" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textview_time"
+                style="@style/chat_timings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:paddingRight="5dp"
+                android:text="11:15 PM" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</com.leagueofshadows.enc.SwipeRevealLayout>

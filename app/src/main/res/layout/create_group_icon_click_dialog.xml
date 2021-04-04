@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_marginTop="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:id="@+id/container"
+        android:padding="13dp"
+        android:focusable="true">
+
+        <TextView
+            android:id="@+id/thumbnail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/round_text"
+            android:backgroundTint="#FFFFFF"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="3dip"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/thumbnail"
+            android:layout_toRightOf="@id/thumbnail"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@id/thumbnail"
+            android:textColor="@color/main_screen_normal"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/delete"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="#E10000"
+            app:srcCompat="@android:drawable/ic_menu_delete" />
+
+    </RelativeLayout>
+</RelativeLayout>

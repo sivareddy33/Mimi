@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBackground"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/send_image"
+        android:visibility="gone"
+        android:id="@+id/image"/>
+    <include layout="@layout/send_msg"
+        android:visibility="gone"
+        android:id="@+id/text"/>
+    <include layout="@layout/send_file"
+        android:visibility="gone"
+        android:id="@+id/file"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:weightSum="100"
+        android:baselineAligned="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="50"
+            android:background="@drawable/gradient_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal"
+            android:padding="13dp"
+            android:textAlignment="center">
+
+
+            <LinearLayout
+                android:id="@+id/read_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/read_image"
+                    android:layout_width="25dp"
+                    android:layout_height="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/message_got_read_receipt_from_target"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="3dp" />
+
+                <TextView
+                    android:id="@+id/read_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/read"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/read"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/read_layout"
+                android:layout_marginTop="7dp"
+                android:textAlignment="center"
+                android:textColor="@color/main_screen_normal"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="50"
+            android:background="@drawable/gradient_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal"
+            android:padding="13dp">
+
+            <LinearLayout
+                android:id="@+id/deliver_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/deliver_image"
+                    android:layout_width="25dp"
+                    android:layout_height="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/message_got_receipt_from_target"
+                    android:backgroundTint="#BFBFBF"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="3dp" />
+
+                <TextView
+                    android:id="@+id/deliver_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delivered"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/deliver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/deliver_layout"
+                android:layout_marginTop="7dp"
+                android:textAlignment="center"
+                android:textColor="@color/main_screen_normal"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listView"
+        android:padding="10dp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|end"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+        <ImageButton
+            android:id="@+id/reply_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:tint="#000000"
+            app:srcCompat="@drawable/baseline_reply_24" />
+
+        <ImageButton
+            android:id="@+id/share_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:tint="#000000"
+            app:srcCompat="@android:drawable/ic_menu_share" />
+
+        <ImageButton
+            android:id="@+id/copy_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:rotation="90"
+            android:tint="#000000"
+            app:srcCompat="@drawable/baseline_filter_none_24" />
+
+        <ImageButton
+            android:id="@+id/info_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:tint="#000000"
+            app:srcCompat="@drawable/ic_info_outline" />
+
+        <ImageButton
+            android:id="@+id/delete_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#E10000"
+            app:srcCompat="@android:drawable/ic_menu_delete" />
+
+    </LinearLayout>
+</FrameLayout>

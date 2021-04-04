@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <color name="colorPrimary">#0f4c75</color>
+    <color name="colorPrimaryDark">#1B262C</color>
+
+    <color name="mainBackground">#121212</color>
+    <color name="background_tab_pressed">#00BCD4</color>
+    <color name="colorAccent">#bbe1fa</color>
+    <color name="button">#278ea5</color>
+    <color name="white">@android:color/white</color>
+    <color name="chat_user_reply_background_color">#c8f0ff</color>
+    <color name="chat_company_reply_background_color">#F5F5F5</color>
+    <color name="gray">@android:color/darker_gray</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="orange">@android:color/holo_blue_light</color>
+    <color name="msg_received_time">#10bcc9</color>
+    <color name="main_screen_normal">#919191</color>
+    <color name="add_group_primary_user">#3F51B5</color>
+    <color name="black">#000000</color>
+    <color name="hint_text_color">#AEBBE1FA</color>
+
+</resources>

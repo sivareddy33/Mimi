@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/editname"
+        android:title="@string/edit_group_name"
+        android:icon="@drawable/baseline_edit_white_24"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/addUser"
+        android:title="@string/add_users"
+        android:icon="@drawable/baseline_person_add_white_24"
+        app:showAsAction="ifRoom"/>
+</menu>

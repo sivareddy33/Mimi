@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.leagueofshadows.enc.SwipeRevealLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    app:dragFromEdge="right"
+    android:id="@+id/swipe"
+    android:layout_marginTop="5dp">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|end"
+            android:orientation="horizontal"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+
+            <ImageButton
+                android:id="@+id/delete_button"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:backgroundTint="#F83728"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_selector"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:id="@+id/container"
+        android:padding="10dp"
+        android:focusable="true">
+
+        <TextView
+            android:id="@+id/thumbnail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/round_text"
+            android:backgroundTint="@color/colorPrimary"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="3dip"
+            android:text="A"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <ImageView
+                android:id="@+id/group_thumbnail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/round_text"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dip"
+                app:srcCompat="@drawable/baseline_people_white_24"
+                android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/thumbnail"
+            android:layout_toEndOf="@id/thumbnail"
+            android:text="@string/username"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@id/thumbnail"
+            android:text="Test Message Here"
+            android:maxLines="1"
+            android:textColor="@color/main_screen_normal"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/name"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dip"
+            android:gravity="right"
+            android:textColor="@color/main_screen_normal"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/msg_circle"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+    </LinearLayout>
+</com.leagueofshadows.enc.SwipeRevealLayout>

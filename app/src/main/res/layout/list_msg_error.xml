@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="#121212">
+
+    <ImageView
+        android:id="@+id/corner"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:rotation="270"
+        android:src="@drawable/ic_right_angled_triangle"
+        android:tint="#212e36" />
+
+    <LinearLayout
+        android:id="@+id/incoming_layout_bubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/to_msg_background"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/userName"
+            style="@style/chat_timings"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:paddingBottom="3dp"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:tint="#EC0D0D"
+                app:srcCompat="@android:drawable/stat_sys_warning" />
+
+            <TextView
+                android:id="@+id/textview_message"
+                style="@style/chat_text_message_style"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:paddingLeft="6dp"
+                android:text="@string/if_this_is_a_text_message_you_will_be_receiving_this_shortly_if_it_contains_media_please_ask_the_user_to_send_it_again"
+                android:textColor="#CC676767" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/time"
+            style="@style/chat_timings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:paddingRight="5dp"
+            android:text="11:15 PM" />
+
+    </LinearLayout>
+
+</RelativeLayout>

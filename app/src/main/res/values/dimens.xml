@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="st_normal">-7dp</dimen>
+    <dimen name="st_55">-57dp</dimen>
+    <dimen name="st_100">-107dp</dimen>
+    <dimen name="st_145">-157dp</dimen>
+    <dimen name="st_130">-130dp</dimen>
+    <dimen name="st_65">-65dp</dimen>
+    <dimen name="appbar_padding">16dp</dimen>
+    <dimen name="message_text_size">15sp</dimen>
+    <dimen name="message_time_size">12sp</dimen>
+    <dimen name="message_padding">5dp</dimen>
+    <dimen name="message_reply_margin_bottom">5dp</dimen>
+
+</resources>

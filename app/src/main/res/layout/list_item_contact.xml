@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_marginTop="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_selector"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:id="@+id/container"
+        android:padding="13dp"
+        android:focusable="true">
+
+        <TextView
+            android:id="@+id/thumbnail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/round_text"
+            android:backgroundTint="#FFFFFF"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="3dip"
+            android:text="A"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/thumbnail"
+            android:layout_toRightOf="@id/thumbnail"
+            android:text="Username"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@id/thumbnail"
+            android:text="+91 9876543210"
+            android:textColor="@color/main_screen_normal"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+</RelativeLayout>

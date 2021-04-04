@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.leagueofshadows.enc.SwipeRevealLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    app:dragFromEdge="left"
+    android:id="@+id/container"
+    android:layout_marginTop="5dp">
+
+    <include layout="@layout/message_options_layout_received"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/message_reply_margin_bottom"
+        android:background="@color/mainBackground">
+
+        <ImageView
+            android:id="@+id/triangle"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:rotation="270"
+            android:src="@drawable/ic_right_angled_triangle"
+            android:tint="#212e36" />
+
+        <LinearLayout
+            android:id="@+id/incoming_layout_bubble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="60dp"
+            android:background="@drawable/to_msg_background"
+            android:orientation="vertical"
+            android:padding="@dimen/message_padding">
+
+            <TextView
+                android:id="@+id/userName"
+                style="@style/chat_timings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:textSize="@dimen/message_text_size"/>
+
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/message_received_reply_layout"/>
+
+            <TextView
+                android:id="@+id/message"
+                style="@style/chat_text_message_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:textSize="@dimen/message_text_size"
+                android:paddingStart="6dp"
+                android:textColor="#CCFFFFFF" />
+
+            <TextView
+                android:id="@+id/time"
+                style="@style/chat_timings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/message_time_size"
+                android:layout_gravity="bottom|right"
+                android:paddingEnd="5dp"
+                android:text="11:15 PM" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</com.leagueofshadows.enc.SwipeRevealLayout>

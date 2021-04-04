@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/refresh"
+        android:id="@+id/refresh"/>
+    <item android:title="@string/open_contacts"
+        android:id="@+id/contacts"/>
+    <item android:title="@string/share_with_friends"
+        android:id="@+id/share"/>
+    <item android:title="@string/syncing_contacts"
+        android:id="@+id/syncingIcon"
+        android:icon="@android:drawable/stat_notify_sync"
+        app:showAsAction="always"
+        android:visible="false"/>
+</menu>

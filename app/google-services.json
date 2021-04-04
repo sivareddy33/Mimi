@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1058339839666",
+    "firebase_url": "https://sal-1-79622.firebaseio.com",
+    "project_id": "sal-1-79622",
+    "storage_bucket": "sal-1-79622.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1058339839666:android:fd1ce95b5eae290e1373ab",
+        "android_client_info": {
+          "package_name": "com.leagueofshadows.enc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1058339839666-1otrb00rlfjgrf5ldjbb2lvli2ju33uj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-lz5QYVdHab5aSYj_y-jZBXxBYp5OAAo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1058339839666-1otrb00rlfjgrf5ldjbb2lvli2ju33uj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

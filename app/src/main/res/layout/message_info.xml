@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/mainBackground"
+    tools:context=".MainActivity">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal"
+            android:padding="13dp">
+
+            <TextView
+                android:id="@+id/read_image"
+                android:layout_width="25dp"
+                android:layout_height="15dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/message_got_read_receipt_from_target"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="3dp" />
+
+            <TextView
+                android:id="@+id/read_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/read_image"
+                android:layout_toEndOf="@id/read_image"
+                android:text="@string/read"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/read"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/read_text"
+                android:layout_marginTop="7dp"
+                android:layout_toEndOf="@id/read_image"
+                android:text="--"
+                android:textColor="@color/main_screen_normal"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal"
+            android:padding="13dp">
+
+            <TextView
+                android:id="@+id/deliver_image"
+                android:layout_width="25dp"
+                android:layout_height="15dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/message_got_receipt_from_target"
+                android:backgroundTint="#BFBFBF"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="3dp" />
+
+            <TextView
+                android:id="@+id/deliver_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/deliver_image"
+                android:layout_toEndOf="@id/deliver_image"
+                android:text="@string/delivered"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/deliver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/deliver_text"
+                android:layout_marginTop="7dp"
+                android:layout_toEndOf="@id/deliver_image"
+                android:text="--"
+                android:textColor="@color/main_screen_normal"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
